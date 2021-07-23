@@ -4,7 +4,7 @@
 #include "credentials.h"
 #include "pinout.h"
 
-int blindsPosition = 0;
+int blindsPosition        = 0;
 int desiredBlindsPosition = 0;
 
 // Encoder
@@ -33,8 +33,8 @@ void setup()
 }
 
 void loop () {
-    // Handle connection between SinricPro server and device
-    SinricPro.handle();
+  // Handle connection between SinricPro server and device
+  SinricPro.handle();
 }
 
 // Potential Future Improvements:

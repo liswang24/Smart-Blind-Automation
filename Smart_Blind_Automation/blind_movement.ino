@@ -17,21 +17,22 @@ void stopBlinds(void){
 }
 
 void moveBlindsToDesiredPosition(int desiredPosition) {
-    Serial.print("Moving blinds to: ");
-    Serial.println(desiredPosition);
+  Serial.print("Moving blinds to: ");
+  Serial.println(desiredPosition);
 
-    while (blindsPosition < desiredPosition) {
-        Serial.println("Moving blinds up!");
-        Serial.print("Current Position: ");
-        Serial.println(blindsPosition);
+  while (blindsPosition < desiredPosition) {
+    Serial.println("Moving blinds up!");
+    Serial.print("Current Position: ");
+    Serial.println(blindsPosition);
 
-        moveBlindsUp();
-    }
-    while (blindsPosition > desiredPosition) {
-        Serial.println("Moving blinds down!");
-        Serial.print("Current Position: ");
-        Serial.println(blindsPosition);
+    moveBlindsUp();
+  }
+  
+  while (blindsPosition > desiredPosition) {
+    Serial.println("Moving blinds down!");
+    Serial.print("Current Position: ");
+    Serial.println(blindsPosition);
 
-        moveBlindsDown();
-    }
+    moveBlindsDown();
+  }
 }
