@@ -5,12 +5,26 @@
 #include "pinout.h"
 
 int blindsPosition = 0;
-// bool powerState = false;
+int desiredBlindsPosition = 0;
+
+// Encoder
+double currStateA;
+int prevStateA;
+double currStateB;
 
 void setup()
 {
   // Set pin modes
-  //pinMode(wifiLED, OUTPUT);
+  pinMode(MOTOR_SPEED, OUTPUT);   //Motor
+  pinMode(MOTOR_IN1, OUTPUT);     // .
+  pinMode(MOTOR_IN2, OUTPUT);     // .
+  pinMode (outputA,INPUT);        // Encoder
+  pinMode (outputB,INPUT);        // .
+  //pinMode(wifiLED, OUTPUT);     // LED
+
+  // ISR Encoder
+  prevStateA = digitalRead(outputA);  //read initial state of outputA
+  attachInterrupt(digitalPinToInterrupt(outputB), updatePosition, CHANGE);
 
   Serial.begin(BAUDE_RATE);
 
