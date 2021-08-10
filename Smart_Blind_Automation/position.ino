@@ -5,12 +5,11 @@ void updatePosition(void){
 
   // Update position if pulse has occured
   if (currStateA != prevStateA){
-    // TODO: update direction based on mounting
     if (currStateB!= currStateA){
-      blindsPosition++;
+      blindsPosition--;
     }
     else {
-      blindsPosition--;
+      blindsPosition+=0.95;
     }
   }
   // Update previous state with current state

@@ -1,14 +1,14 @@
 // TODO: Motor directions to be finalized after mounting
 void moveBlindsUp(void){
   digitalWrite(MOTOR_SPEED, SPEED);
-  digitalWrite(MOTOR_IN1, HIGH);
-  digitalWrite(MOTOR_IN2, LOW);
+  digitalWrite(MOTOR_IN1, LOW);
+  digitalWrite(MOTOR_IN2, HIGH);
 }
  
 void moveBlindsDown(void){
   digitalWrite(MOTOR_SPEED, SPEED);
-  digitalWrite(MOTOR_IN1, LOW);
-  digitalWrite(MOTOR_IN2, HIGH);
+  digitalWrite(MOTOR_IN1, HIGH);
+  digitalWrite(MOTOR_IN2, LOW);
 }
 
 void stopBlinds(void){

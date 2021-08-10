@@ -1,6 +1,3 @@
-// Wifi Status LED
-// #define wifiLED      7
-
 // Motor Pins
 #define MOTOR_SPEED     27
 #define MOTOR_IN1       26
@@ -17,4 +14,4 @@
 #define SPEED           128     // Slow = 64, Normal = 128, Fast = 255
 
 // Postions
-#define FULLY_OPEN      200 // TODO: TBD
+#define FULLY_OPEN      250     // Modify based on desired blind length
