@@ -18,13 +18,13 @@ void setup()
   pinMode(MOTOR_SPEED, OUTPUT);   //Motor
   pinMode(MOTOR_IN1, OUTPUT);     // .
   pinMode(MOTOR_IN2, OUTPUT);     // .
-  pinMode (outputA,INPUT);        // Encoder
-  pinMode (outputB,INPUT);        // .
+  pinMode (OUTPUT_A,INPUT);        // Encoder
+  pinMode (OUTPUT_B,INPUT);        // .
   //pinMode(wifiLED, OUTPUT);     // LED
 
   // ISR Encoder
-  prevStateA = digitalRead(outputA);  //read initial state of outputA
-  attachInterrupt(digitalPinToInterrupt(outputB), updatePosition, CHANGE);
+  prevStateA = digitalRead(OUTPUT_A);  //read initial state of OUTPUT_A
+  attachInterrupt(digitalPinToInterrupt(OUTPUT_B), updatePosition, CHANGE);
 
   Serial.begin(BAUDE_RATE);
 

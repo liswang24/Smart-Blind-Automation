@@ -1,9 +1,9 @@
 void updatePosition(void){
   // Read current state
-  currStateA = digitalRead(outputA);
-  currStateB = digitalRead(outputB);
+  currStateA = digitalRead(OUTPUT_A);
+  currStateB = digitalRead(OUTPUT_B);
 
-  // Update position if pulse has occured
+  // Update position if pulse has occurred
   if (currStateA != prevStateA){
     if (currStateB!= currStateA){
       blindsPosition--;

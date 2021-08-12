@@ -4,8 +4,8 @@
 #define MOTOR_IN2       25
 
 // Encoder Pins
-#define outputA         33
-#define outputB         32
+#define OUTPUT_A         33
+#define OUTPUT_B         32
 
 // Serial Monitor
 #define BAUDE_RATE      9600
