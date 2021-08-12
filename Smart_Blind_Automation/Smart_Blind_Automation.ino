@@ -14,13 +14,12 @@ double currStateB;
 
 void setup()
 {
-  // Set pin modes
-  pinMode(MOTOR_SPEED, OUTPUT);   //Motor
+  // Set Pin Modes
+  pinMode(MOTOR_SPEED, OUTPUT);   // Motor
   pinMode(MOTOR_IN1, OUTPUT);     // .
   pinMode(MOTOR_IN2, OUTPUT);     // .
-  pinMode (OUTPUT_A,INPUT);        // Encoder
-  pinMode (OUTPUT_B,INPUT);        // .
-  //pinMode(wifiLED, OUTPUT);     // LED
+  pinMode (OUTPUT_A,INPUT);       // Encoder
+  pinMode (OUTPUT_B,INPUT);       // .
 
   // ISR Encoder
   prevStateA = digitalRead(OUTPUT_A);  //read initial state of OUTPUT_A
@@ -36,7 +35,3 @@ void loop () {
   // Handle connection between SinricPro server and device
   SinricPro.handle();
 }
-
-// Potential Future Improvements:
-// - Way to set open/closed location upon startup
-// - External LED for status indication
