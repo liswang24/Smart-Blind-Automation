@@ -39,7 +39,7 @@ Video demonstrating the device in action:
 
 Login or create a [SinricPro](https://sinric.pro) account. Once logged in, select 'Devices' from the menu on the left. Click the '+ Add Device' button at the top to create a new device. Fill out the necessary fields in the form. Select the device type to be 'Blinds'. After this you should see a Blinds Device under your devices. It will have a device ID associated with it, we will need this later.
 
-![SinricPro Device ID](https://user-images.githubusercontent.com/43894278/129126078-c28162f5-29e9-4dc9-85ff-3fb79744b0f9.jpeg)>
+![SinricPro Device ID](https://user-images.githubusercontent.com/43894278/129126078-c28162f5-29e9-4dc9-85ff-3fb79744b0f9.jpeg)
 
 You will also need an APP KEY and APP SECRET, these can be found under 'Credentials' in the menu.
 
