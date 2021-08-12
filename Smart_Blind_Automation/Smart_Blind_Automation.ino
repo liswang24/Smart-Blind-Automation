@@ -4,12 +4,12 @@
 #include "credentials.h"
 #include "pinout.h"
 
-double blindsPosition        = 0;  // TODO: double? if we do adjustments for counter
-double desiredBlindsPosition = 0;  // TODO: double?
+double blindsPosition        = 0;
+double desiredBlindsPosition = 0;
 
 // Encoder
 double currStateA;
-double prevStateA; // TODO: double?
+double prevStateA;
 double currStateB;
 
 void setup()
